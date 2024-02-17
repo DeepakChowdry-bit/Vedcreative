@@ -45,7 +45,6 @@
     top: 0;
     left: -2px;
     animation: 1s video_a;
-    animation-delay: 1s;
 }
 
 @keyframes video_a{
