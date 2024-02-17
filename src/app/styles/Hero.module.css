@@ -1,0 +1,56 @@
+.title{
+  animation: 0.5s fade_in;
+}
+
+.para {
+  animation: fade_in;
+}
+
+.para:nth-child(1) {
+  animation-duration: 0.5s;
+}
+.para:nth-child(2) {
+  animation-duration: 0.7s;
+}
+.para:nth-child(3) {
+  animation-duration: 0.9s;
+}
+.para:nth-child(4) {
+  animation-duration: 1.1s;
+}
+.para:nth-child(5) {
+  animation-duration: 1.3s;
+}
+.para:nth-child(6) {
+  animation-duration: 1.5s;
+}
+
+@keyframes fade_in {
+  from {
+    opacity: .5;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.video::before{
+    content: '';
+    width: 101%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    animation: 1s video_a;
+}
+
+@keyframes video_a{
+    from{
+        height: 101%;
+    }to{
+        height: 0%;
+    }
+}

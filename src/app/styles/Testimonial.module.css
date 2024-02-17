@@ -1,0 +1,99 @@
+.title {
+  background: linear-gradient(to right, #000 40%, rgb(255, 255, 255));
+  background-size: 200%;
+  animation: reveal linear both;
+  animation-timeline: view();
+  background-repeat: no-repeat;
+  animation-range: entry 100px cover 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes reveal {
+  from {
+    background-position-x: 200%;
+  }
+  to {
+    background-position-x: 0;
+  }
+}
+
+.item {
+  animation: img_a linear both;
+  animation-timeline: view();
+}
+
+.item:nth-child(1) {
+  animation-range: entry 200px cover 20%;
+}
+
+.item:nth-child(2) {
+  animation-range: entry 200px cover 40%;
+}
+
+.item:nth-child(3) {
+  animation-range: entry 200px cover 50%;
+}
+
+@keyframes img_a {
+  from {
+    opacity: 0.5;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.paragraph {
+  background: linear-gradient(to right, #000 40%, rgb(255, 255, 255));
+  background-size: 200%;
+  animation: reveal linear both;
+  animation-timeline: view();
+  background-repeat: no-repeat;
+  animation-range: entry 100px cover 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.name {
+  font-weight: bold;
+  animation: name_a  both linear;
+  animation-timeline: view();
+  /* animation-range: entry 100px cover 25%; */
+  animation-range: entry 70px cover 20%;
+
+ 
+}
+
+@keyframes name_a {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+
+  }
+}
+
+
+.post{
+  animation: post_a linear both;
+  animation-timeline: view();
+  animation-range: entry 70px cover 30%;
+}
+
+@keyframes post_a{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
